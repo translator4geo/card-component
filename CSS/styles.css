@@ -1,0 +1,198 @@
+body {
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  background-color: #0d192c;
+  align-items: center;
+  align-content: center;
+}
+
+/* // ძირითადი ყუთი */
+
+.container {
+  margin: auto;
+  width: 350px;
+  height: 596px;
+  background-color: #15263f;
+  border-radius: 15px;
+}
+
+/* მთავარი ფოტო */
+
+.image-box {
+  margin: 24px;
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  transform: translate(0px, -0px);
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.overlay {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* margin: 24px; */
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #00fff8;
+}
+
+.overlay img {
+  width: 44px;
+  height: 30px;
+  margin: auto;
+}
+
+.image-box:hover .overlay {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+/* ტექსტი */
+
+#main-heading {
+  margin: 0;
+  padding-left: 24px;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.top {
+  margin: 24px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+
+  font-style: Light;
+  font-size: 18px;
+  line-height: 26px;
+  line-height: 115%;
+  text-align: Left;
+  vertical-align: Top;
+  paragraph-spacing: 1px;
+  color: #8bacd9;
+  font-style: light;
+}
+
+.green {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  justify-content: space-between;
+}
+
+/* .green img {
+  margin-right: 6.48px;
+  margin-left: 0;
+} */
+
+#green-left {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #00fff8;
+}
+
+#green-right {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8bacd9;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left img {
+  margin-right: 6.48px;
+  margin-left: 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right img {
+  margin-right: 9.3px;
+  margin-left: 0;
+}
+
+#line {
+  /* position: absolute; */
+  height: 1px;
+  width: 302px;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 16px;
+  border-radius: 0px;
+  background-color: #2e405a;
+}
+
+.bottom {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#avatar {
+  box-sizing: border-box;
+  max-width: 33px;
+  border-radius: 300px;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid #ffffff;
+}
+
+.bottom p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 8px;
+  padding-left: 15px;
+  color: #8bacd9;
+}
+
+span {
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+span:hover {
+  color: #00fff8;
+}
+
+#main-heading:hover {
+  color: #00fff8;
+}
